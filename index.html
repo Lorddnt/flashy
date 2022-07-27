@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/989af73fd5.js" crossorigin="anonymous"> </script>
+    <title>Flash Trips Ltd</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar {
+            display: flex;
+            background-color: white;
+            padding: 10px;
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+            color: yellowgreen;
+        }
+        ul {
+           
+            list-style: none;
+            flex: 50px;
+        }
+        li {
+            padding: 10px;
+            display: inline;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(2, 2, 39);
+        }
+        img {
+           height: 30px;
+           width: 80px;
+           
+        }
+        .logo {
+            flex: auto;
+          padding-left: 40px;
+            
+        }
+        button {
+            border-radius: 15px;
+            background-color: yellow;
+            width: 80px;
+            height: 30px;
+            border: none;
+            margin-right: 20px;
+        }
+        .button {
+            border-radius: 15px;
+            background-color: white;
+            width: 80px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .items {
+            background-color: rgb(2, 2, 39);
+            width: 555px;
+            height: 400px;
+        }
+
+        .boxx {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .itemss {
+            position: relative;
+            background-color: rgb(2, 2, 39);
+            width: 250px;
+            height: 300px;
+            
+        }
+        .itemsy {
+            position: relative;
+            background-color: rgba(245, 245, 175, 0.562);
+            width: 250px;
+            height: 300px;
+            
+        }
+        .bxxx {
+            width: 100%;
+            height: 350px;
+            background-color: rgb(2, 2, 39);
+            margin-top: 30px;
+        }
+        
+        .itomsy {
+            position: relative;
+            background-color:white;
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            
+        }
+        .item {
+            background-image: url(jaguar1.jpg);
+            width: 555px;
+            height: 400px;
+        }
+        .bax {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .itams {
+            background-color: white;
+            width: 455px;
+            height: 310px;
+        }
+        .itam {
+            background-image: url(analytics.png);
+            width: 455px;
+            height: 310px;
+        }
+
+        .car {
+            position: absolute;
+            height: 60px;
+            right: 0px;
+            left: 0px;
+            margin: auto;
+            top: -30px;    
+        }
+        .car1 {
+            position: absolute;
+            height: 60px;
+            width: 30px;
+            right: 0px;
+            left: 225px;
+            transform: rotate(47deg);
+            bottom: -19.5px; 
+           
+        }
+        .cars {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            right: 0px;
+            left: 0px;
+            margin: auto;
+            top: -30px;
+            border-radius: 100px;    
+        }
+        h1 {
+            font-size: 45px;
+        }
+        h3 {
+            color: white;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    
+        .jazz {
+            color: rgb(2, 2, 39);
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .base {
+            padding: 30px;
+            color: white;
+        }
+        .bose {
+            padding: 40px;
+            color: rgb(2, 2, 39);
+        }
+        .app {
+            width: 200px;
+            padding-left: 40px;
+        }
+        .bases {
+            padding: 40px;
+            color: white;
+        }
+        .basey {
+            padding: 40px;
+            color: rgb(2, 2, 39);
+        }
+        .bassy {
+            padding: 20px;
+            color: rgb(2, 2, 39);
+        }
+        .basex {
+            padding: 20px;
+            color: white;
+        }
+        .basy {
+            padding: 20px;
+            color: rgb(2, 2, 39);
+        }
+        .basyy {
+            padding: 5px;
+            color: rgb(2, 2, 39);
+        }
+        
+        span {
+            color: yellow;
+        }
+        .bass {
+            margin-left: 65px;
+            width: 100px;
+            border-radius: 10px;
+            background-color: yellow;
+            
+        }
+        .bess {
+            margin-left: 65px;
+            width: 100px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid rgb(2, 2, 39);
+        }
+        .basso {
+            margin-left: 30px;
+            width: 110px;
+            border-radius: 10px;
+            background-color: rgb(2, 2, 39);
+            border: whitesmoke solid 1px;
+        }
+        .basso a {
+            color: white;
+        }
+        .head {
+            text-align: center;
+            padding: 30px;
+        }
+        .heady {
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        main {
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 70px;
+            
+        }
+        .one {
+            grid-row: 1/2;
+            grid-column: 1/4;
+            background-color: yellow;
+        }
+     .two {
+        grid-row: 2/3;
+            grid-column: 1/2;
+            background-color: yellow;
+     }
+     .three {
+        grid-row: 2/3;
+            grid-column: 2/3;
+            background-color: yellow;
+     }
+     .four {
+        grid-row: 2/3;
+            grid-column: 3/4;
+            background-color: yellow;
+     }
+     .five {
+        grid-row: 3/4;
+            grid-column: 1/2;
+            background-color: yellow;
+     }
+     .six {
+        grid-row: 3/4;
+            grid-column: 2/3;
+            background-color: yellow;
+     }
+     .seven {
+        grid-row: 3/4;
+            grid-column: 3/4;
+            background-color: yellow;
+        }
+        .grid-txt {
+            text-align: center;
+            padding: 5px;
+        }
+        .ham {
+            padding-bottom: 5px;
+            text-decoration: underline;
+            padding-top: 20px;
+        }
+        .foot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+            background-color:  rgba(245, 245, 175, 0.562);
+        }
+        .foot-txt {
+            padding: 40px;
+        }
+
+      
+      
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="flash.png" alt="logo">
+        </div>
+        <ul>
+           
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Contact us</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="#">Tourism</a></li>
+        </ul>
+        <div class="buz">
+            <button class="button"><a href="#"> Link up</a></button>
+            <button><a href="#"> Book now</a></button>
+        </div>
+     </nav> 
+     <div class="box">
+        <div class="items">
+            <h1 class="base">The fast,<br> <span> affordable</span>
+                <br>way to ride.</h1>
+                <p class="base">Ride with flash and experience comfort
+                    <br>at its full extent, no worries <br>
+                    as your satisfaction is gauranteed.</p>
+                    <button class="bass"><a href="#"> Book a ride</a></button>
+                    <button class="basso"><a href="#">Driver : Register</a></button>        
+        </div>
+        <div class="item">
+            
+        </div> 
+        
+       </div> 
+       <h1 class="head">Our <br>Tarriffs</h1> 
+
+       <div class="boxx">
+        <div class="itemsy">
+            <img class="car" src="jaguar1.png" alt="car">
+            <h3 class="basey">Expressway Class</h3>
+                <p class="basy">Quality ride with factory <br>
+                 fitted Ac and asorted snacks, no beverage. </p>
+                 <h3 class="jazz">$2.50 Km/hr</h3>
+                    <button class="bess"><a href="#"> Book a ride</a></button>
+                        
+        </div>
+        <div class="itemss">
+            <img class="car" src="jaguar1.png" alt="car">
+            <img class="car1" src="log.png" alt="car">
+            <h3 class="bases">Standard Class</h3>
+                <p class="basex">Quality ride with factory <br>
+                    fitted Ac and asorted snacks and beverages.</p>
+                    <h3>$3.50 Km/hr</h3>
+                    <button class="bass"><a href="#"> Book a ride</a></button>
+                         
+        </div>
+        <div class="itemsy">
+            <img class="car" src="jaguar1.png" alt="car">
+            <h3 class="basey">Leadway Class</h3>
+                <p class="basy">Quality ride with factory <br>
+                    fitted Ac and asorted snacks and beverages and kickbacks.</p>
+                    <h3 class="jazz">$4.50 Km/hr</h3>
+                    <button class="bess"><a href="#"> Book a ride</a></button>               
+        </div>
+       </div> 
+       
+       <main class="main">
+        <div class="one">
+            <h2 class="head">Welcome! <br>What we have to offer.</h2> 
+        </div>
+        <div class="two">
+            <h4 class="grid-txt"><i class="fa-solid fa-suitcase"></i>  Address Pick Up</h4>
+            
+            <p class="grid-txt">Eliminate all stress and call us for <br>pick up right there 
+            in your home and we will <br>be right there in your doorstep </p>
+        </div>
+        <div class="three">
+            <h4 class="grid-txt"><i class="fa-solid fa-plane"></i> Airport Travlling</h4>
+            <p class="grid-txt">Eliminate all stress and board our cars <br>for a seamless trip 
+                to your airport location <br>we are just miles away from your doorstep </p>
+        </div>
+        <div class="four">
+            <h4 class="grid-txt"><i class="fa-solid fa-earth-africa"></i> Booking for Trips</h4>
+            <p class="grid-txt">Eliminate all stress and book us online <br>reach us through 
+                our app at the comfort of your home <br>and be right there in your doorstep </p>
+            
+        </div>
+        <div class="five">
+            <h4 class="grid-txt"><i class="fa-brands fa-hire-a-helper"></i> Trip Hiring</h4>
+            <p class="grid-txt">Eliminate all stress and hire our exotic cars <br>for your comfort  
+                ride to various destination <br> and enjoy flexible and affordable charges </p>
+
+        </div>
+        <div class="six">
+            <h4 class="grid-txt"><i class="fa-solid fa-truck-fast"></i></i> Fast Rocketing</h4>
+            <p class="grid-txt">Our quality services makes us unique and appealing, <br> we are just miles
+            away from your home and we will <br>be right there in your doorstep </p>
+
+        </div>
+        <div class="seven">
+            <h4 class="grid-txt"><i class="fa-solid fa-location-crosshairs"></i> GPS Tracking</h4>
+            <p class="grid-txt">Call us for quality GPS Tracking on any type <br>of cars, we render quality
+            and affordable charges with <br>suffisticated IT gadgets to meet your needs</p>
+        </div>
+        
+    </main>
+
+    <div class="bax">
+        <div class="itams">
+            <h2 class="bose"><span>Flash</span> Apps Kit
+                <br>The Market, Get it Here.</h2>
+                <p class="bose">The most convinent app in trips market
+                    <br>get it and experience comfort
+                    <br>at its full extent.</p>
+                    <img class="app" src="app.png" alt="app">       
+        </div>
+        <div class="itam">
+            
+        </div> 
+        
+       </div> 
+        
+
+       <div class="bxxx">
+        <h2 class="heady">Client's <br>Satisfaction/Testimonials</h2>
+        <div class="boxx">
+        <div class="itomsy">
+            <img class="cars" src="woman.jpg" alt="car">
+            <h3 class="bassy">Jena Stones</h3>
+                <p class="basyy">Thank you so much for all the wonderful and efficient
+                    <br>transportation this past 
+                    week for our CJP mission. 
+                   <br> All of your drivers were great and we 
+                   enjoyed all the transportation. </p>
+                
+        </div>
+        <div class="itomsy">
+            <img class="cars" src="man.jpg" alt="car">
+            <h3 class="bassy">Dr. Richards Sins</h3>
+                <p class="basyy">Our concert went off without a hitch 
+                    and it was a great day after all. We really enjoyed 
+                    working with your team from Flash Trips. 
+                    Everything went smoothly so we didn’t 
+                    have to worry about a thing.</p>
+                   
+                         
+        </div>
+        <div class="itomsy">
+            <img class="cars" src="woman1.jpg" alt="car">
+            <h3 class="bassy">Dr. Winnie Brooks</h3>
+                <p class="basyy">Thank you for making sure everything ran smoothly 
+                    each day I ride with you. I appreciate all of your efforts 
+                    and look forward to working with you again soon! Thank you!!</p>
+                                  
+        </div>
+        <div class="itomsy">
+            <img class="cars" src="men2.jpg" alt="car">
+            <h3 class="bassy">Humphery Bills</h3>
+                <p class="basyy">Quality ride is your watch word indeed.
+                    Thank you so very much!! Everything was perfect, 
+                    and the drivers were the best!! Will definitely 
+                    use your service next time we need it!!
+                </p>
+                                 
+        </div>
+       </div> 
+    </div>
+
+    <footer class="foot">
+        <div class="foot-txt">
+            <h2 class="ham"><span>F</span>lash</h2>
+            <p>The best fleet for your next
+                <br>trip. Enjoy your comfort with <br>
+                ease. Link up with us on:
+            </p>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+        </div>
+        <div class="foot-txt">
+            <h2 class="ham">Discomfort</h2>
+            <p>Let's have your complaint.
+                <br>Call any of the numbers below:
+            </p>
+            <p>+27718567900 <i class="fa-solid fa-phone-flip"></i></p>
+            <p>+2348156093409 <i class="fa-solid fa-mobile-screen"></i></p>
+
+        </div>
+        <div class="foot-txt">
+            <h2 class="ham">Contact us</h2>
+            <p> <i class="fa-solid fa-mobile-screen"></i>  +2348067542245 </p>
+            <p> <a href="#"><i class="fa-solid fa-envelope"></i>  info@flash.com </a></p>
+            <p> <i class="fa-solid fa-location-dot"></i>  KM467 Badagry Expressway <br>
+                   Agbara, Lagos Nigeria. </p>
+        </div>
+       
+    </footer>
+      
+</body>
+</html>
