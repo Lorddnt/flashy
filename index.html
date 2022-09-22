@@ -20,10 +20,12 @@
             text-decoration: underline;
             color: yellowgreen;
         }
+        .bingo{
+            padding-top: 6px;
+            padding-right: 50px;
+        }
         ul {
-           
             list-style: none;
-            flex: 50px;
         }
         li {
             padding: 10px;
@@ -304,6 +306,12 @@
         .foot-txt {
             padding: 40px;
         }
+        .mask {
+            padding: 10px;
+            padding-top: 20px;
+            font-size: 30px;
+            display: none;
+}
 
         @media screen and (max-width: 600px) {
             li {
@@ -313,9 +321,6 @@
             .navbar a:hover{
             text-decoration: underline;
             color: yellowgreen;
-        }
-        .button{
-            display: block;
         }
         main {
             display: grid;
@@ -366,18 +371,41 @@
         .boxx {
             display: block;
             margin: 50px;
-           
         }
-        .itemss {
-            margin-top: 30px;
-            margin-bottom: 30px;
+        .itemss, .itemsy {
+            margin: auto;
+            margin-top: 20px;
         }
+       
         .bxxx {
-            height: 1300px;
+            height: 1350px;
         }
         .itomsy {
+            margin: auto;
+            margin-top: 35px;
            height: 270px;
         }
+        .bingo {
+        position: absolute;
+        background-color: whitesmoke;
+        z-index: 4;
+        right: 0px;
+        left: 0px;
+        top: 50px;
+        text-align: center;
+        clip-path: polygon(0 100%, 0 100%, 0 100%, 50% 50%);
+        transition-property: clip-path;
+        transition-duration: 3s;
+
+    }
+    .mask {
+        display: block;
+        padding-top: 5px;
+        color: rgb(2, 2, 39);
+    }
+    .cue {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
             
         }
       
@@ -389,6 +417,7 @@
         <div class="logo">
             <img src="flash.png" alt="logo">
         </div>
+        <div class="bingo">
         <ul>
            
          <li><a href="#">Home</a></li>
@@ -397,10 +426,12 @@
          <li><a href="#">Services</a></li>
          <li><a href="#">Tourism</a></li>
         </ul>
+    </div>
         <div class="buz">
             <button class="button"><a href="#"> Link up</a></button>
             <button><a href="#"> Book now</a></button>
         </div>
+        <div class="mask"><i class="fa-solid fa-bars"></i></div>
      </nav> 
      <div class="box">
         <div class="items">
@@ -580,6 +611,18 @@
         </div>
        
     </footer>
+
+
+    <script>
+         let mask = document.querySelector('.mask'); 
+            mask.onclick = function () {
+                let list = document.querySelector('.bingo');
+                list.classList.toggle('cue');
+                }
+
+
+
+    </script>
       
 </body>
 </html>
